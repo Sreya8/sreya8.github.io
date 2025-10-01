@@ -400,16 +400,98 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-the-complete-agentic-ai-engineering-course-2025",
+          title: 'The Complete Agentic AI Engineering Course (2025)',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+              window.location.href = "/books/agentic-ai/";
+            },},{id: "books-atomic-habits",
+          title: 'Atomic Habits',
           description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "Books",handler: () => {
+              window.location.href = "/books/atomicHabits/";
+            },},{id: "books-aws-certified-machine-learning-engineer-associate",
+          title: 'AWS Certified Machine Learning Engineer Associate',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/aws/";
+            },},{id: "books-designing-data-intensive-applications",
+          title: 'Designing Data Intensive Applications',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ddia/";
+            },},{id: "books-deep-learning-with-python",
+          title: 'Deep Learning with Python',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dl/";
+            },},{id: "books-good-to-great",
+          title: 'Good to Great',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/goodToGreat/";
+            },},{id: "books-hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow",
+          title: 'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/homl/";
+            },},{id: "books-machine-learning-system-design-interview",
+          title: 'Machine Learning System Design Interview',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ml-sd/";
+            },},{id: "books-speech-and-language-processing",
+          title: 'Speech and Language Processing',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/nlp/";
+            },},{id: "books-power-of-now",
+          title: 'Power of Now',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/powerOfNow/";
+            },},{id: "books-stanford-cs224n-nlp-with-deep-learning",
+          title: 'Stanford CS224N NLP with Deep Learning',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/stanford-nlp/";
+            },},{id: "books-deeplearning-ai-tensorflow-developer-professional-certificate",
+          title: 'DeepLearning.AI TensorFlow Developer Professional Certificate',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/tensorflow/";
+            },},{id: "news-landed-in-south-korea-for-my-double-degree-exchange-program-looking-forward-to-an-exciting-two-years-of-learning-and-growth",
+          title: 'Landed in South Korea for my double degree exchange program. Looking forward to...',
+          description: "",
+          section: "News",},{id: "news-excited-to-start-my-first-research-internship-at-the-intelligent-signal-processing-lab-i-ll-be-working-on-facial-emotion-recognition-using-deep-learning-and-can-t-wait-to-dive-into-ai-research-until-october-31-2021",
+          title: 'Excited to start my first research internship at the Intelligent Signal Processing Lab!...',
+          description: "",
+          section: "News",},{id: "news-published-an-international-conference-paper-foreground-extraction-based-facial-emotion-recognition-using-deep-learning-xception-model-at-the-2021-twelfth-international-conference-on-ubiquitous-and-future-networks-icufn-in-jeju-island-korea-excited-to-share-our-work",
+          title: 'Published an international conference paper, Foreground Extraction Based Facial Emotion Recognition Using Deep...',
+          description: "",
+          section: "News",},{id: "news-beginning-my-internship-at-the-center-for-high-energy-physics-assisting-with-data-extraction-from-particle-physics-experiments-and-training-neural-networks-to-classify-photons-from-background-signals",
+          title: 'Beginning my internship at the Center for High Energy Physics, assisting with data...',
+          description: "",
+          section: "News",},{id: "news-joined-the-vision-and-intelligent-systems-lab-conducting-research-and-developing-deep-learning-models-for-videofluoroscopic-swallowing-studies-vfss-to-enhance-ai-driven-rehabilitation",
+          title: 'Joined the Vision and Intelligent Systems Lab. Conducting research and developing deep learning...',
+          description: "",
+          section: "News",},{id: "news-thrilled-to-have-graduated-from-christ-university-with-a-bachelor-of-technology-in-computer-science-and-engineering-earning-first-class-with-distinction",
+          title: 'Thrilled to have graduated from Christ University with a Bachelor of Technology in...',
+          description: "",
+          section: "News",},{id: "news-graduated-from-kyungpook-national-university-with-a-bachelor-of-science-in-engineering-in-the-school-of-computer-science-and-engineering",
+          title: 'Graduated from Kyungpook National University with a Bachelor of Science in Engineering in...',
+          description: "",
+          section: "News",},{id: "news-joining-usc-to-pursue-my-master-of-science-in-computer-science",
+          title: 'Joining USC to pursue my Master of Science in Computer Science.',
+          description: "",
+          section: "News",},{id: "news-my-first-author-journal-paper-comparative-analysis-of-deep-learning-architectures-for-penetration-and-aspiration-detection-in-videofluoroscopic-swallowing-studies-is-now-published-in-ieee-access",
+          title: 'My first-author journal paper, Comparative Analysis of Deep Learning Architectures for Penetration and...',
+          description: "",
+          section: "News",},{id: "news-started-working-at-usc-neuroimaging-and-informatics-institute-focusing-on-ml-for-white-matter-hyperintensity-segmentation-to-aid-alzheimer-s-detection-i-will-be-there-until-july-31-2024",
+          title: 'Started working at USC Neuroimaging and Informatics Institute, focusing on ML for white...',
+          description: "",
+          section: "News",},{id: "news-just-graduated-from-usc",
+          title: 'Just graduated from USC! 🎓',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
