@@ -1,81 +1,40 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: GAN-Driven Facial Expression Augmentation
+description: Animating static facial images using a First Order Motion GAN model for photorealistic facial expression augmentation.
+img: assets/img/project_images/GAN-project.png
 importance: 2
-category: work
-giscus_comments: true
+category: Machine Learning
+related_publications: false
+# pdf: assets/pdf/infinite_expressions.pdf
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<div class="mt-4">
+    <p>
+        <strong>Infinite Expressions</strong> is a GAN-driven framework designed to animate static facial images by transferring dynamic expressions and head movements from high-quality video datasets. Leveraging the First Order Motion Model, the system integrates multiple deep learning components—keypoint detector, dense motion network, and occlusion aware generator to produce photorealistic animated outputs. This self supervised approach eliminates the need for heavily annotated datasets and generalizes across diverse objects.
+    </p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+    <h4>Approach:</h4>
+    <ul>
+        <li>Keypoint detector maps facial features across frames.</li>
+        <li>Dense motion network predicts dense motion fields to align source and driving poses.</li>
+        <li>Occlusion-aware generator warps source images and inpaints occluded regions for realistic animation.</li>
+        <li>Trained on the <a href="https://www.robots.ox.ac.uk/~vgg/data/voxceleb/">VoxCeleb</a> dataset using a self-supervised learning strategy.</li>
+    </ul>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+    <h4>Results:</h4>
+    <ul>
+        <li>Produces lifelike facial animations from static images.</li>
+        <li>Perceptually realistic outputs validated through visual inspection and loss metrics (perceptual, equivariance, discriminator, and generator losses).</li>
+        <li>Demonstrates robustness across unseen subjects and significant pose changes.</li>
+    </ul>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+    <h4>Impact:</h4>
+    <p>
+        This framework has potential applications in entertainment, education, and historical preservation, enabling animated storytelling, immersive learning, and dynamic reconstructions of historical figures.
+    </p>
+
+    <p>
+        Download the full report: <a href="/assets/pdf/infinite_expressions.pdf" target="_blank">Infinite Expressions : GAN-Driven Facial Expression Augmentation (PDF)</a>
+    </p>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
