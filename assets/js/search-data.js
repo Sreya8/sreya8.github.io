@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -487,20 +487,15 @@ ninja.data = [{
           section: "News",},{id: "news-my-first-author-journal-paper-comparative-analysis-of-deep-learning-architectures-for-penetration-and-aspiration-detection-in-videofluoroscopic-swallowing-studies-is-now-published-in-ieee-access",
           title: 'My first-author journal paper, Comparative Analysis of Deep Learning Architectures for Penetration and...',
           description: "",
-          section: "News",},{id: "news-started-working-at-usc-neuroimaging-and-informatics-institute-focusing-on-ml-for-white-matter-hyperintensity-segmentation-to-aid-alzheimer-s-detection-i-will-be-there-until-july-31-2024",
-          title: 'Started working at USC Neuroimaging and Informatics Institute, focusing on ML for white...',
+          section: "News",},{id: "news-started-working-at-usc-neuroimaging-and-informatics-institute-loni-focusing-on-ml-for-white-matter-hyperintensity-segmentation-to-aid-alzheimer-s-detection-adni-i-will-be-there-until-july-31-2024",
+          title: 'Started working at USC Neuroimaging and Informatics Institute (LONI), focusing on ML for...',
           description: "",
           section: "News",},{id: "news-just-graduated-from-usc",
           title: 'Just graduated from USC! 🎓',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+          section: "News",},{id: "projects-gan-driven-facial-expression-augmentation",
+          title: 'GAN-Driven Facial Expression Augmentation',
+          description: "Animating static facial images using a First Order Motion GAN model for photorealistic facial expression augmentation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
@@ -538,6 +533,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-depression-detection-with-audio-text-transformers",
+          title: 'Depression Detection with Audio-Text Transformers',
+          description: "Multi-modal transformer approach for detecting depression from audio and text.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/depression-detection/";
             },},{
         id: 'social-email',
         title: 'email',
