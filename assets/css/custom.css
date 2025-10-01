@@ -1,0 +1,8 @@
+.cv-icon path {
+  fill: #000; /* default color */
+  transition: fill 0.3s ease;
+}
+
+.cv-icon:hover path {
+  fill: #007bff; /* hover color */
+}
