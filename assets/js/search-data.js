@@ -486,12 +486,7 @@ ninja.data = [{
           section: "News",},{id: "news-just-graduated-from-usc",
           title: 'Just graduated from USC! 🎓',
           description: "",
-          section: "News",},{id: "projects-gan-driven-facial-expression-augmentation",
-          title: 'GAN-Driven Facial Expression Augmentation',
-          description: "Animating static facial images using a First Order Motion GAN model for photorealistic facial expression augmentation.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
+          section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
@@ -526,6 +521,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-gan-driven-facial-expression-augmentation",
+          title: 'GAN-Driven Facial Expression Augmentation',
+          description: "Animating static facial images using a First Order Motion GAN model for photorealistic facial expression augmentation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/GAN/";
+            },},{id: "projects-ai-research-agent-rag-system",
+          title: 'AI Research Agent (RAG System)',
+          description: "An agentic RAG pipeline integrating multiple LLMs with LangChain, RESTful APIs, and custom tools for automated research workflows.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/RAG_Agent/";
             },},{id: "projects-depression-detection-with-audio-text-transformers",
           title: 'Depression Detection with Audio-Text Transformers',
           description: "Multi-modal transformer approach for detecting depression from audio and text.",
