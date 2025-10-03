@@ -24,7 +24,7 @@ nav_order: 4
 {% assign book_status_style_reading = "background: rgba(255, 193, 7, 0.75); color: #333;" %}
 {% assign book_status_style_completed = "background: rgba(76, 175, 80, 0.75); color: white;" %}
 
-## Technical Books
+## technical books
 
 <div style="display: flex; flex-wrap: wrap; gap: 1%; margin-bottom: 40px;">
 {% for book in technical_books %}
@@ -49,7 +49,7 @@ nav_order: 4
 </div>
 
 
-## Online Courses
+## online courses
 
 <div style="display: flex; flex-wrap: wrap; gap: 2%; margin-bottom: 40px;">
 {% for book in courses %}
@@ -79,7 +79,7 @@ nav_order: 4
 
 
 
-## Other Books
+## other books
 
 <div style="display: flex; flex-wrap: wrap; gap: 1%; margin-bottom: 40px;">
 {% for book in other_books %}

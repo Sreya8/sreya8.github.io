@@ -4,7 +4,7 @@ title: AI Research Agent (RAG System)
 description: An agentic RAG pipeline integrating multiple LLMs with LangChain, RESTful APIs, and custom tools for automated research workflows.
 img: assets/img/project_images/RAG-agent.jpg
 importance: 3
-category: Machine Learning
+category: machine learning
 related_publications: false
 # pdf: assets/pdf/ai_research_agent.pdf
 ---

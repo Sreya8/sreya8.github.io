@@ -4,7 +4,7 @@ title: GAN-Driven Facial Expression Augmentation
 description: Animating static facial images using a First Order Motion GAN model for photorealistic facial expression augmentation.
 img: assets/img/project_images/GAN-project.png
 importance: 2
-category: Machine Learning
+category: machine learning
 related_publications: false
 # pdf: assets/pdf/infinite_expressions.pdf
 ---
