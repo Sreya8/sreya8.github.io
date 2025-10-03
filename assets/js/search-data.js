@@ -486,12 +486,10 @@ ninja.data = [{
           section: "News",},{id: "news-just-graduated-from-usc",
           title: 'Just graduated from USC! 🎓',
           description: "",
-          section: "News",},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+          section: "News",},{id: "news-excited-to-start-a-software-engineer-for-analytics-internship-at-easley-dunn-productions-inc-contributing-to-the-mediverse-vr-project-i-ll-be-working-on-building-analytics-pipelines-and-turning-vr-data-into-actionable-insights",
+          title: 'Excited to start a Software Engineer for Analytics internship at Easley Dunn Productions,...',
+          description: "",
+          section: "News",},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -536,6 +534,11 @@ ninja.data = [{
           description: "Multi-modal transformer approach for detecting depression from audio and text.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/depression-detection/";
+            },},{id: "projects-sentiment-analysis-with-distilbert",
+          title: 'Sentiment Analysis with DistilBERT',
+          description: "Finetuning DistilBERT for sentiment classification using PyTorch and Hugging Face Transformers with custom training pipelines.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sentiment-analysis/";
             },},{
         id: 'social-email',
         title: 'email',
