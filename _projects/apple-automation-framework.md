@@ -1,80 +1,99 @@
 ---
+
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
----
+title: Apple.com Automation Framework
+description: Cross-browser test automation framework for Apple.com using Playwright, WebKit, and accessibility testing.
+img: assets/img/project_images/apple-framework-cover.jpg
+importance: 1
+category: software testing
+related_publications: false
+---------------------------
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Link to the code: <a href="https://github.com/Sreya8/apple-playwright-framework" target="_blank">GitHub</a>.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="text-center mt-4">
+    {% include figure.liquid path="assets/img/project_images/apple-framework-architecture.png" title="Apple.com Automation Framework Architecture" class="img-fluid rounded z-depth-1" width="80%" %}
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+This project is a production-style test automation framework built for Apple.com using Playwright and pytest. The framework validates critical user journeys across WebKit and Chromium browsers, incorporates accessibility testing based on WCAG guidelines, and generates detailed HTML reports through CI/CD pipelines.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Project Goals
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+* Build a scalable cross-browser automation framework using industry-standard design patterns.
+* Validate key Apple.com user workflows including navigation, product discovery, and search functionality.
+* Integrate automated accessibility testing into the test suite.
+* Enable continuous execution through GitHub Actions.
 
-{% raw %}
+### Features
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+* **Cross-Browser Testing**: Supports WebKit and Chromium execution.
+* **Page Object Model (POM)**: Modular architecture for maintainable and reusable test code.
+* **Accessibility Validation**: Automated WCAG compliance checks using axe-core.
+* **Parallel Test Execution**: Faster test runs through pytest parallelization.
+* **HTML Reporting**: Detailed execution reports with screenshots and logs.
+* **CI/CD Integration**: Automated execution through GitHub Actions.
+
+### Test Coverage
+
+The framework currently includes automated validation for:
+
+* Global site navigation and menu interactions
+* Product category navigation
+* Search functionality and result validation
+* Footer links and site-wide components
+* Accessibility compliance checks
+* Responsive behavior across supported browsers
+
+### Framework Architecture
+
+```text
+apple-playwright-framework/
+├── pages/
+│   ├── home_page.py
+│   ├── search_page.py
+│   └── navigation_page.py
+├── tests/
+│   ├── test_navigation.py
+│   ├── test_search.py
+│   └── test_accessibility.py
+├── utils/
+├── reports/
+├── conftest.py
+└── pytest.ini
 ```
 
-{% endraw %}
+### Tools and Frameworks
+
+* **Automation**: Playwright
+* **Programming Language**: Python
+* **Test Runner**: pytest
+* **Accessibility Testing**: axe-core
+* **Reporting**: pytest-html
+* **CI/CD**: GitHub Actions
+* **Design Pattern**: Page Object Model (POM)
+
+### Quality Engineering Highlights
+
+* Implemented reusable page objects to reduce test maintenance effort.
+* Added automated accessibility scanning as part of regression testing.
+* Built browser-agnostic test cases to ensure consistent behavior across rendering engines.
+* Integrated automated reporting and CI execution for rapid feedback.
+
+### Sample Findings
+
+During framework development, testing uncovered edge cases in Apple.com search behavior and navigation workflows, demonstrating how automated testing can surface user-facing defects and regressions.
+
+### Key Takeaways
+
+* Cross-browser validation is essential for ensuring consistent user experience.
+* Accessibility testing can be seamlessly integrated into automated regression suites.
+* Page Object Model significantly improves framework scalability and maintainability.
+* CI/CD automation enables continuous quality validation with minimal manual effort.
+
+### Applications
+
+* Web application test automation
+* Accessibility compliance validation
+* Cross-browser regression testing
+* Continuous Integration and Quality Engineering workflows
+* Production-grade SDET framework development
