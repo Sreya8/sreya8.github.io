@@ -3,7 +3,7 @@ layout: page
 title: Depression Detection with Audio-Text Transformers
 description: Multi-modal transformer approach for detecting depression from audio and text.
 img: assets/img/project_images/depression-cover.jpg
-importance: 1
+importance: 2
 category: machine learning
 related_publications: false
 # pdf: assets/pdf/depression_detection.pdf

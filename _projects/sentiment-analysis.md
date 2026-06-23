@@ -3,7 +3,7 @@ layout: page
 title: Sentiment Analysis with DistilBERT
 description: Finetuning DistilBERT for sentiment classification using PyTorch and Hugging Face Transformers with custom training pipelines.
 img: assets/img/project_images/sentiment-analysis.jpg
-importance: 4
+importance: 5
 category: machine learning
 related_publications: false
 # pdf: assets/pdf/sentiment_analysis.pdf
