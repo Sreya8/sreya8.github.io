@@ -5,7 +5,7 @@ permalink: /projects/
 # description: A growing collection of your cool projects.
 nav: true
 nav_order: 1
-display_categories: [software testing, software development, machine_learning]
+display_categories: [machine learning, software]
 horizontal: false
 ---
 
