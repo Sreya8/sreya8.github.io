@@ -524,11 +524,6 @@ ninja.data = [{
           description: "An agentic RAG pipeline integrating multiple LLMs with LangChain, RESTful APIs, and custom tools for automated research workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/RAG_Agent/";
-            },},{id: "projects-apple-automation-framework",
-          title: 'Apple Automation Framework',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/apple-automation-framework/";
             },},{id: "projects-depression-detection-with-audio-text-transformers",
           title: 'Depression Detection with Audio-Text Transformers',
           description: "Multi-modal transformer approach for detecting depression from audio and text.",
